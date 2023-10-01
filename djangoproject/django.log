@@ -1,0 +1,45 @@
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+WARNING log Not Found: /123
+WARNING basehttp "GET /123 HTTP/1.1" 404 2201
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+WARNING log Not Found: /seminar/about
+WARNING basehttp "GET /seminar/about HTTP/1.1" 404 3214
+INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 127
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 241
+WARNING log Not Found: /123
+WARNING basehttp "GET /123 HTTP/1.1" 404 2201
+INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 241
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 247
+INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 247
