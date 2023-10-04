@@ -981,3 +981,27 @@ INFO autoreload Watching for file changes with StatReloader
 INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 279
 INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 373
 INFO basehttp "GET /seminar/orelreshka/stats/?n=10 HTTP/1.1" 200 701
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /blog HTTP/1.1" 301 0
+INFO basehttp "GET /blog/ HTTP/1.1" 200 14
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\blogapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\blogapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /blog/ HTTP/1.1" 200 14
+WARNING log Not Found: /blog/authors
+WARNING basehttp "GET /blog/authors HTTP/1.1" 404 2394
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\blogapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /blog/authors HTTP/1.1" 301 0
+INFO basehttp "GET /blog/authors/ HTTP/1.1" 200 0
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\blogapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader

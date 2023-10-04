@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'seminarapp'
+    'seminarapp',
+    'blogapp',
 ]
 
 MIDDLEWARE = [
@@ -152,6 +153,11 @@ LOGGING = {
             'level': 'INFO',
         },
         'seminarapp': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'blog': {
             'handlers': ['console'],
             'level': 'DEBUG',
             'propagate': True,
