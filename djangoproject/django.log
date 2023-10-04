@@ -43,3 +43,941 @@ INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.
 INFO autoreload Watching for file changes with StatReloader
 INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 247
 INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 247
+INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 247
+INFO basehttp "GET /seminar/aboutpage HTTP/1.1" 200 247
+INFO basehttp "GET /seminar/mainpage HTTP/1.1" 200 217
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka HTTP/1.1" 301 0
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+WARNING log Not Found: /favicon.ico
+WARNING basehttp "GET /favicon.ico HTTP/1.1" 404 2225
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 20, in orelreshka
+    return HttpResponse(OrelReshka.get_rolls(4))
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 13, in get_rolls
+    query = OrelReshka.objects.order_by("-roll_time")[n:]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'roll_time' into field. Choices are: id, roll_result
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 86630
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 20, in orelreshka
+    return HttpResponse(str(OrelReshka.get_rolls(4)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 13, in get_rolls
+    query = OrelReshka.objects.order_by("-roll_time")[n:]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'roll_time' into field. Choices are: id, roll_result
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 86736
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 13
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 48
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 85
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 122
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 159
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 196
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 233
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 272
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 310
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 348
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 386
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 424
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 462
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 500
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 538
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 576
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 614
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 22, in orelreshka
+    return HttpResponse(str(OrelReshka.get_rolls(4)))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 377, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 19, in __str__
+    "roll_time":self.roll_time
+                ^^^^^^^^^^^^^^
+AttributeError: 'OrelReshka' object has no attribute 'roll_time'
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 75196
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 690
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 728
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 766
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 806
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 806
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 806
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 806
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 806
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 10
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 8
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+WARNING log Not Found: /
+WARNING basehttp "GET / HTTP/1.1" 404 2174
+WARNING log Not Found: /favicon.ico
+WARNING basehttp "GET /favicon.ico HTTP/1.1" 404 2225
+INFO basehttp "GET /seminar/ HTTP/1.1" 200 13
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 23, in orelreshka
+    return HttpResponse(str(OrelReshka.get_rolls(4)))
+                            ^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'OrelReshka' has no attribute 'get_rolls'
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 64589
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 1013
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 1068
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 39
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 1198
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 2612
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 23, in orelreshka
+    return HttpResponse(str(OrelReshka.get_rolls(4)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 16, in get_rolls
+    return query.value()
+           ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'value'
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 68559
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 1334
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 23, in orelreshka
+    return HttpResponse(str(OrelReshka.get_rolls(4)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 15, in get_rolls
+    query = dict(OrelReshka.objects.all())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 67574
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 23, in orelreshka
+    return HttpResponse(str(OrelReshka.get_rolls(4)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 15, in get_rolls
+    query = dict(OrelReshka.objects.all())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 67590
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 23, in orelreshka
+    return HttpResponse(str(OrelReshka.get_rolls(4)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 15, in get_rolls
+    query = dict(OrelReshka.objects.all())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 67590
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 1164
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 23, in orelreshka
+    return HttpResponse(str(OrelReshka.get_rolls(4)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 15, in get_rolls
+    query = OrelReshka.objects.all()[:-n]
+            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 429, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 72635
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 233
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 25, in orelreshka
+    return HttpResponse(str(**OrelReshka.get_rolls(4)))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: str() argument after ** must be a mapping, not QuerySet
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 64616
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 25, in orelreshka
+    return HttpResponse(**OrelReshka.get_rolls(4))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: django.http.response.HttpResponse() argument after ** must be a mapping, not QuerySet
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 64718
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 25, in orelreshka
+    return HttpResponse(**dict(OrelReshka().get_rolls(4)))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 64672
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 25, in orelreshka
+    return HttpResponse(**dict(OrelReshka.get_rolls(4)))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 64664
+ERROR log Internal Server Error: /seminar/orelreshka/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 25, in orelreshka
+    return HttpResponse(**dict(OrelReshka.get_rolls(4)))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR basehttp "GET /seminar/orelreshka/ HTTP/1.1" 500 64660
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats HTTP/1.1" 301 0
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 233
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 233
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    print(res.dict())
+          ^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'dict'
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64631
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 30, in orelreshka_stats
+    return HttpResponse(f"{res.items()}")
+                           ^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'items'
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64649
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 222
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 222
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 222
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    return HttpResponse('/n'.join(res))
+                        ^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, OrelReshka found
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64654
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    return HttpResponse('/n'.join(res))
+                        ^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, OrelReshka found
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64654
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    return HttpResponse('/n'.join(res))
+                        ^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, OrelReshka found
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64654
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    return HttpResponse('/n'.join(res))
+                        ^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, OrelReshka found
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64654
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    return HttpResponse('/n'.join(res))
+                        ^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, OrelReshka found
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64654
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    print('/n'.join(res))
+          ^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, OrelReshka found
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64598
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    logger.info('/n'.join(res))
+                ^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, OrelReshka found
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64622
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    logger.info(" ".join(res))
+                ^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, OrelReshka found
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64618
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 29, in orelreshka_stats
+    logger.info('/n'.join(**res.__str__()))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: str.join() argument after ** must be a mapping, not str
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64666
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 158
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 166
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 186
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 41, in orelreshka_stats
+    res = list(OrelReshka.get_rolls(n))
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 15, in get_rolls
+    query = OrelReshka.objects.all()[:n]
+            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 426, in __getitem__
+    or (k.stop is not None and k.stop < 0)
+                               ^^^^^^^^^^
+TypeError: '<' not supported between instances of 'str' and 'int'
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 72586
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 46
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 46
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 46
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 46
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 41, in orelreshka_stats
+    res = list(OrelReshka.get_rolls(n))
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 15, in get_rolls
+    query = OrelReshka.objects.all()[:n]
+            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 426, in __getitem__
+    or (k.stop is not None and k.stop < 0)
+                               ^^^^^^^^^^
+TypeError: '<' not supported between instances of 'str' and 'int'
+ERROR basehttp "GET /seminar/orelreshka/stats/?n=4 HTTP/1.1" 500 72743
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/?n=4 HTTP/1.1" 200 186
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 40, in orelreshka_stats
+    n = int(request.GET.get("n", 1))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'
+ERROR basehttp "GET /seminar/orelreshka/stats/?n=d HTTP/1.1" 500 64575
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 40, in orelreshka_stats
+    n = int(request.GET.get("n", 1))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'
+ERROR basehttp "GET /seminar/orelreshka/stats/?n=d HTTP/1.1" 500 64730
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 47, in orelreshka_stats
+    page = page.replace("%content%", "неверный аргумент")
+           ^^^^
+UnboundLocalError: cannot access local variable 'page' where it is not associated with a value
+ERROR basehttp "GET /seminar/orelreshka/stats/?n=d HTTP/1.1" 500 65014
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 47, in orelreshka_stats
+    page = page.replace("%content%", "неверный аргумент")
+           ^^^^
+UnboundLocalError: cannot access local variable 'page' where it is not associated with a value
+ERROR basehttp "GET /seminar/orelreshka/stats/?n=d HTTP/1.1" 500 65014
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/?n=d HTTP/1.1" 200 153
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 271
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 42, in orelreshka_stats
+    res = OrelReshka.get_rolls(int(n))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 17, in get_rolls
+    query = OrelReshka.objects.all()[-n:]
+            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 429, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+ERROR basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 500 72782
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 42, in orelreshka_stats
+    res = OrelReshka.get_rolls(int(n))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py", line 17, in get_rolls
+    query = OrelReshka.objects.all()[-n]
+            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 429, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+ERROR basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 500 72759
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 44, in orelreshka_stats
+    content = "".join([f"<p>{i}</p>" for i in list(res)])
+                                              ^^^^^^^^^
+TypeError: 'OrelReshka' object is not iterable
+ERROR basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 500 65125
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 1807
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 1807
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 1807
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 1807
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 1947
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 1947
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 1947
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 1947
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 1947
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 1947
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 83
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/ HTTP/1.1" 200 82
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 2644
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 177
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 177
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 177
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 48, in orelreshka_stats
+    if i['roll_result']:
+       ~^^^^^^^^^^^^^^^
+TypeError: 'OrelReshka' object is not subscriptable
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 64990
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 48, in orelreshka_stats
+    if i['roll_result'] == True:
+       ~^^^^^^^^^^^^^^^
+TypeError: 'OrelReshka' object is not subscriptable
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 65006
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 53, in orelreshka_stats
+    content += f"Орел: {stats}, Решка: {n-stats}"
+                                        ~^~~~~~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 65429
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 53, in orelreshka_stats
+    content += f"Орел: {stats}, Решка: {n-stats}"
+                                        ~^~~~~~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 65435
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /seminar/orelreshka/stats/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py", line 48, in orelreshka_stats
+    if i['roll_result'] == True:
+       ~^^^^^^^^^^^^^^^
+TypeError: 'OrelReshka' object is not subscriptable
+ERROR basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 500 65011
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 260
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 279
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 279
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 279
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 279
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\seminarapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /seminar/orelreshka/stats/ HTTP/1.1" 200 279
+INFO basehttp "GET /seminar/orelreshka/stats/?n=3 HTTP/1.1" 200 373
+INFO basehttp "GET /seminar/orelreshka/stats/?n=10 HTTP/1.1" 200 701
