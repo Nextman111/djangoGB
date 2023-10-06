@@ -1005,3 +1005,16 @@ INFO basehttp "GET /blog/authors HTTP/1.1" 301 0
 INFO basehttp "GET /blog/authors/ HTTP/1.1" 200 0
 INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\blogapp\models.py changed, reloading.
 INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\djangoproject\settings.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
