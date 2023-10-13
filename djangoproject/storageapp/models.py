@@ -8,8 +8,8 @@ class Client(models.Model):
     adress = models.CharField(max_length=100, blank=False)
     date_reg = models.DateField(auto_now_add=True)
 
-    # def __str__(self):
-    #     return f'id: {self.pk}. {self.name}'
+    def __str__(self):
+        return f'id: {self.pk}. {self.name}'
 
 
 class Product(models.Model):

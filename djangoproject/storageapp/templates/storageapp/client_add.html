@@ -1,0 +1,17 @@
+{% extends 'storageapp/base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+
+    <h1>{{ title }}</h1>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}

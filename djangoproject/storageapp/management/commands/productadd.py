@@ -14,7 +14,8 @@ class Command(BaseCommand):
         )
         parser.add_argument(
             "email",
-            type=str, help="email",
+            type=str,
+            help="email",
         )
         parser.add_argument(
             "phone",

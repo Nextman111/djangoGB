@@ -1,0 +1,41 @@
+{% extends 'storageapp/base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+
+    <h2>Таблица {{ title }}</h2>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Adress</td>
+            <td>Date registration</td>
+<!--            <td>Удалить</td>-->
+
+        </tr>
+        {% for item in content %}
+        <tr>
+            <td>{{ item.pk }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.phone }}</td>
+            <td>{{ item.adress }}</td>
+            <td>{{ item.date_reg }}</td>
+            <td>
+                <a href="del/" title="Удалить">Удалить</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+    <div>
+        <a href="./add" title="Добавить">Добавить</a>
+    </div>
+
+{% endblock %}
