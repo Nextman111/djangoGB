@@ -27,7 +27,10 @@
             <td>{{ item.adress }}</td>
             <td>{{ item.date_reg }}</td>
             <td>
-                <a href="del/" title="Удалить">Удалить</a>
+                 <form action="{% url 'client_del' item.pk %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="Удалить">
+                </form>
             </td>
         </tr>
         {% endfor %}
