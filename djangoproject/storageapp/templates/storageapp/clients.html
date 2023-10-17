@@ -27,6 +27,13 @@
             <td>{{ item.adress }}</td>
             <td>{{ item.date_reg }}</td>
             <td>
+                 <form action="{% url 'client_edit' %}" method="get">
+                    {% csrf_token %}
+                    <input type="hidden" name="pk" value="{{ item.pk}}">
+                    <input type="submit" value="Изменить">
+                </form>
+            </td>
+            <td>
                  <form action="{% url 'client_del' item.pk %}" method="post">
                     {% csrf_token %}
                     <input type="submit" value="Удалить">

@@ -11,6 +11,15 @@ class Client(models.Model):
     def __str__(self):
         return f'id: {self.pk}. {self.name}'
 
+    def as_dict(self):
+        return {
+            'name': self.name,
+            'email': self.email,
+            'phone': self.phone,
+            'adress': self.adress,
+            'date_reg': self.date_reg,
+        }
+
 
 class Product(models.Model):
     title = models.CharField(max_length=100, blank=False)

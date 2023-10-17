@@ -5,7 +5,7 @@ from django.views import View
 from django.views.generic import TemplateView, FormView
 from django.views.generic.edit import DeletionMixin
 
-from .forms import ClientAddForm
+from .forms import ClientForm
 from .models import Client
 
 logger = logging.getLogger(__name__)
@@ -41,20 +41,27 @@ class ClientDelete(View):
         return redirect('client_page')
 
 
-class ClientAdd(FormView):
-    template_name = "storageapp/client_add.html"
-    form_class = ClientAddForm
-    success_url = '.'
+class ClientAddEdit(FormView):
+    template_name = "storageapp/client.html"
+    form_class = ClientForm
+    success_url = '../'
 
     def get_context_data(self, **kwargs):
         # context = super().get_context_data(**kwargs)
-        title = "Add new Client"
-        form = ClientAddForm()
+
+        if not self.request.GET.get('pk') is None:
+            client = Client.objects.filter(pk=self.request.GET.get('pk')).first()
+            form = ClientForm(initial=client.as_dict())
+            title = f"Edit Client with id: {client.pk}"
+        else:
+            title = "Add new Client"
+            form = ClientForm()
 
         return {'form': form, 'title': title}
 
     def form_valid(self, form):
         client = Client(
+            pk=self.request.GET.get('pk'),
             name=form.cleaned_data['name'],
             email=form.cleaned_data['email'],
             phone=form.cleaned_data['phone'],

@@ -3,7 +3,7 @@ import datetime
 from django import forms
 
 
-class ClientAddForm(forms.Form):
+class ClientForm(forms.Form):
     name = forms.CharField(max_length=100, )
     email = forms.EmailField()
     phone = forms.CharField(max_length=12)

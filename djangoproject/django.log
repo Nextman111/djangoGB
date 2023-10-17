@@ -1914,3 +1914,1249 @@ INFO autoreload Watching for file changes with StatReloader
 INFO basehttp "POST /shop/clients/del/4 HTTP/1.1" 302 0
 INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 2228
 INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 2228
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_edit' not found. 'client_edit' is not a valid view function or pattern name.
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 170797
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3233
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3236
+INFO basehttp "POST /shop/clients/edit/1 HTTP/1.1" 200 1274
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3236
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3236
+INFO basehttp "POST /shop/clients/edit/1 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/2
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(context['pk'])
+          ~~~~~~~^^^^^^
+KeyError: 'pk'
+ERROR basehttp "POST /shop/clients/edit/2 HTTP/1.1" 500 84649
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/1
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(kwargs['pk'])
+          ~~~~~~^^^^^^
+KeyError: 'pk'
+ERROR basehttp "POST /shop/clients/edit/1 HTTP/1.1" 500 84086
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/1 HTTP/1.1" 200 1274
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/2 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+WARNING log Not Found: /favicon.ico
+WARNING basehttp "GET /favicon.ico HTTP/1.1" 404 2435
+INFO basehttp "POST /shop/clients/edit/2 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/2 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(self.request['pk'])
+          ~~~~~~~~~~~~^^^^^^
+TypeError: 'WSGIRequest' object is not subscriptable
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 84276
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 50, in post
+    pk = self.request.get('pk')
+         ^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 75892
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 50, in post
+    pk = self.request.post('pk')
+         ^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 75900
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 50, in post
+    pk = self.request.post('pk')
+         ^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 75890
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ClientAddEdit.post() got an unexpected keyword argument 'pk'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 71814
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ClientAddEdit.post() got an unexpected keyword argument 'pk'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 71814
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(self.request.post)
+          ^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 84334
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(self.request.post())
+          ^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 84338
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(self.request.get())
+          ^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 84330
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(**kwargs)
+TypeError: 'form' is an invalid keyword argument for print()
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 84250
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO basehttp "POST /shop/clients/edit/2 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/2
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(context['pk'])
+          ~~~~~~~^^^^^^
+KeyError: 'pk'
+ERROR basehttp "POST /shop/clients/edit/2 HTTP/1.1" 500 84649
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/2
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/shop/clients/edit/2/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR basehttp "POST /shop/clients/edit/2 HTTP/1.1" 500 71251
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/shop/clients/edit/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 71251
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+WARNING log Not Found: /shop/clients/edit/3
+WARNING basehttp "POST /shop/clients/edit/3 HTTP/1.1" 404 3282
+WARNING log Not Found: /shop/clients/edit/2
+WARNING basehttp "POST /shop/clients/edit/2 HTTP/1.1" 404 3282
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/shop/clients/edit/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 71251
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(context['pk'])
+          ~~~~~~~^^^^^^
+KeyError: 'pk'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 84649
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3422
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3422
+ERROR log Internal Server Error: /shop/clients/edit/3
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ClientAddEdit.get_context_data() missing 1 required positional argument: 'pk'
+ERROR basehttp "POST /shop/clients/edit/3 HTTP/1.1" 500 80689
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+WARNING log Not Found: /shop/clients/edit/2
+WARNING basehttp "POST /shop/clients/edit/2 HTTP/1.1" 404 3266
+WARNING log Not Found: /shop/clients/edit/3
+WARNING basehttp "POST /shop/clients/edit/3 HTTP/1.1" 404 3266
+WARNING log Not Found: /shop/clients/edit/2
+WARNING basehttp "POST /shop/clients/edit/2 HTTP/1.1" 404 3266
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3419
+INFO basehttp "POST /shop/clients/edit/ HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/ HTTP/1.1" 200 1274
+INFO basehttp "POST /shop/clients/edit/ HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/ HTTP/1.1" 200 1274
+INFO basehttp "POST /shop/clients/edit/ HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(self.request.post())
+          ^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+ERROR basehttp "POST /shop/clients/edit/ HTTP/1.1" 500 84940
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+WARNING log Not Found: /favicon.ico
+WARNING basehttp "GET /favicon.ico HTTP/1.1" 404 2435
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 155, in post
+    return self.form_invalid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 69, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(self.request.GET['pk'])
+          ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "POST /shop/clients/edit/ HTTP/1.1" 500 92485
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/ HTTP/1.1" 200 1274
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3416
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=gZRTVDKvjy2RR5XlRbIkSQsBJW3ZzO1EHZgA7vCh28ctQe9Li2LgNUaC3g4yljGz&pk=3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=gZRTVDKvjy2RR5XlRbIkSQsBJW3ZzO1EHZgA7vCh28ctQe9Li2LgNUaC3g4yljGz&pk=3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=gZRTVDKvjy2RR5XlRbIkSQsBJW3ZzO1EHZgA7vCh28ctQe9Li2LgNUaC3g4yljGz&pk=3 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 55, in get_context_data
+    print(client.as_dict())
+          ^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'as_dict'
+ERROR basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=gZRTVDKvjy2RR5XlRbIkSQsBJW3ZzO1EHZgA7vCh28ctQe9Li2LgNUaC3g4yljGz&pk=3 HTTP/1.1" 500 80615
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 55, in get_context_data
+    print(client.as_dict)
+          ^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'as_dict'
+ERROR basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=gZRTVDKvjy2RR5XlRbIkSQsBJW3ZzO1EHZgA7vCh28ctQe9Li2LgNUaC3g4yljGz&pk=3 HTTP/1.1" 500 80748
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3416
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 55, in get_context_data
+    print(client.as_dict)
+          ^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'as_dict'
+ERROR basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=554X1GIfZr3wcGi6OojGUgwDF5vXN9k4w5tEdyA1I1d8bPuwffmCPkeEZpwwzEZZ&pk=1 HTTP/1.1" 500 80608
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=554X1GIfZr3wcGi6OojGUgwDF5vXN9k4w5tEdyA1I1d8bPuwffmCPkeEZpwwzEZZ&pk=1 HTTP/1.1" 200 1274
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3416
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=V7QbZcYafduzIYqaqhN9265AuY7DDKuDm7fSb4QWYNEbH7CAR8Q5XaNBOi8cpf9y&pk=2 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=V7QbZcYafduzIYqaqhN9265AuY7DDKuDm7fSb4QWYNEbH7CAR8Q5XaNBOi8cpf9y&pk=2 HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 3416
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=2 HTTP/1.1" 200 1346
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=2 HTTP/1.1" 302 0
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] is None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/edit/ HTTP/1.1" 500 87591
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=2 HTTP/1.1" 200 1346
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=2 HTTP/1.1" 302 0
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] is None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/edit/ HTTP/1.1" 500 87591
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=2 HTTP/1.1" 200 1346
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=2 HTTP/1.1" 302 0
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] == None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/edit/ HTTP/1.1" 500 87591
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=2 HTTP/1.1" 200 1346
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=3 HTTP/1.1" 200 1366
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=3 HTTP/1.1" 302 0
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] == None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/edit/ HTTP/1.1" 500 87639
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=3 HTTP/1.1" 200 1366
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=3 HTTP/1.1" 302 0
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] is None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/edit/ HTTP/1.1" 500 87639
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=3 HTTP/1.1" 200 1366
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=ypQt2uP0LUeyNfSzvhW9S9nG21mEXp3kZpfaemHMuuoaMo4ZW8Z5Nd5HmlndJUIf&pk=3 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9089
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=O6D6HmnWZpm5nCwk9nSBMRcztUTbqSIHf62NTefIIZwHmLIKAeVxHVUANeUKcnnC&pk=3 HTTP/1.1" 200 1366
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=O6D6HmnWZpm5nCwk9nSBMRcztUTbqSIHf62NTefIIZwHmLIKAeVxHVUANeUKcnnC&pk=3 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10047
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10047
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=Of8tinSwb8azhu5z50QvqSUg2HnWsr3QffxaufKiUIkbgDhZwRTrlWChm1oveWIL&pk=6 HTTP/1.1" 200 1353
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=Of8tinSwb8azhu5z50QvqSUg2HnWsr3QffxaufKiUIkbgDhZwRTrlWChm1oveWIL&pk=6 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10991
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10991
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=vmiQBhilKiHHtDljoiwUB0uC7T7NaNywWmHxN9a7tSRjsMxJP9zQw4cDrd8mWidr&pk=9 HTTP/1.1" 200 1415
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=vmiQBhilKiHHtDljoiwUB0uC7T7NaNywWmHxN9a7tSRjsMxJP9zQw4cDrd8mWidr&pk=9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 11947
+INFO basehttp "POST /shop/clients/del/14 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10991
+INFO basehttp "POST /shop/clients/del/13 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10047
+INFO basehttp "POST /shop/clients/del/12 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9089
+INFO basehttp "POST /shop/clients/del/11 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 8135
+INFO basehttp "POST /shop/clients/del/10 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 7181
+INFO basehttp "POST /shop/clients/del/9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 6230
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 6230
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=tzFHOFEbxgzLygq3g4pPcatRXLJS3wwUUz4o0xwXgQJnxpCtHVsL7ebSh5KrP1bP&pk=8 HTTP/1.1" 200 1353
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=tzFHOFEbxgzLygq3g4pPcatRXLJS3wwUUz4o0xwXgQJnxpCtHVsL7ebSh5KrP1bP&pk=8 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 7179
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=88s6MG59GAVtggsUDjve1p24tv7L3TUJz8RNYyXVpa55fpEk4ayaWtK5NP8kPozE&pk=15 HTTP/1.1" 200 1363
+ERROR log Internal Server Error: /shop/clients/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 63, in form_valid
+    pk=form.cleaned_data['pk'],
+       ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'pk'
+ERROR basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=88s6MG59GAVtggsUDjve1p24tv7L3TUJz8RNYyXVpa55fpEk4ayaWtK5NP8kPozE&pk=15 HTTP/1.1" 500 82149
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=88s6MG59GAVtggsUDjve1p24tv7L3TUJz8RNYyXVpa55fpEk4ayaWtK5NP8kPozE&pk=15 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 8117
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=n5TiKYYOccx3t7RN3H7jXCefvEuoMSzNO5iZWQQAVMHFsg3duyafSGWgPYvXyneI&pk=16 HTTP/1.1" 200 1352
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=n5TiKYYOccx3t7RN3H7jXCefvEuoMSzNO5iZWQQAVMHFsg3duyafSGWgPYvXyneI&pk=16 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9053
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=H2Ols9mr1EyOiDh2UqI3KcMn6xe8S28b82d2E1edKeIqhMtslhLZFguoqRfHExN6&pk=17 HTTP/1.1" 200 1350
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=H2Ols9mr1EyOiDh2UqI3KcMn6xe8S28b82d2E1edKeIqhMtslhLZFguoqRfHExN6&pk=17 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9054
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=cz8U7HzVt24SlNMRwahU0inKPpKvNNwMDzxBjzrHcCeukWYhX1kQVm5L9JL4zibH&pk=16 HTTP/1.1" 200 1352
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=cz8U7HzVt24SlNMRwahU0inKPpKvNNwMDzxBjzrHcCeukWYhX1kQVm5L9JL4zibH&pk=16 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9057
+INFO basehttp "GET /shop/clients/add HTTP/1.1" 301 0
+ERROR log Internal Server Error: /shop/clients/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] is None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/add/ HTTP/1.1" 500 87393
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9057
+ERROR log Internal Server Error: /shop/clients/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] is None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/add/ HTTP/1.1" 500 87401
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] == None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/add/ HTTP/1.1" 500 87538
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9057
+ERROR log Internal Server Error: /shop/clients/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    if not self.request.GET['pk'] == None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/add/ HTTP/1.1" 500 87401
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 52, in get_context_data
+    if not self.request.GET['pk'] is None:
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/add/ HTTP/1.1" 500 87539
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/add/ HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in get_context_data
+    print(self.request.GET['pk'])
+          ~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pk'
+ERROR basehttp "GET /shop/clients/add/ HTTP/1.1" 500 87507
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/add/ HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/add/ HTTP/1.1" 200 1274
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=ibStV7v8mMh7waI5Jm7JXmb5NahusC7aJbha7ZnU5mrJvjUvadaFSqT67ui3e7M5&pk=15 HTTP/1.1" 200 1363
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=ibStV7v8mMh7waI5Jm7JXmb5NahusC7aJbha7ZnU5mrJvjUvadaFSqT67ui3e7M5&pk=15 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9057
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=GtXEIDykwkUdZGU6ZhWToDAsHSi3ssC07tmlUvq6fU4PYP6wq8ZPjHit1cjCeXhV&pk=8 HTTP/1.1" 200 1353
+INFO basehttp "POST /shop/clients/edit/?csrfmiddlewaretoken=GtXEIDykwkUdZGU6ZhWToDAsHSi3ssC07tmlUvq6fU4PYP6wq8ZPjHit1cjCeXhV&pk=8 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9054
+INFO basehttp "GET /shop/clients/add/ HTTP/1.1" 200 1274
+INFO basehttp "POST /shop/clients/add/ HTTP/1.1" 302 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10008
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=zkChMDRkzHfPdQPKbfQz78H746VCLjXW0k1YYvJ6ihprcZ1aC6Tv2cp8oqWbxOCR&pk=8 HTTP/1.1" 200 1350
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
