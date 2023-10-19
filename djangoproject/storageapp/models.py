@@ -13,6 +13,7 @@ class Client(models.Model):
 
     def as_dict(self):
         return {
+            'pk': self.pk,
             'name': self.name,
             'email': self.email,
             'phone': self.phone,
@@ -28,8 +29,18 @@ class Product(models.Model):
     count = models.IntegerField(default=0)
     date_update = models.DateField(auto_now=True)
 
-    # def __str__(self):
-    #     return f'id: {self.pk}. {self.title}'
+    def __str__(self):
+        return f'id: {self.pk}. {self.title}'
+
+    def as_dict(self):
+        return {
+            'pk': self.pk,
+            'title': self.title,
+            'description': self.description,
+            'price': self.price,
+            'count': self.count,
+            'date_update': self.date_update,
+        }
 
 
 class Order(models.Model):
@@ -38,5 +49,14 @@ class Order(models.Model):
     costing = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
     date_create = models.DateField(auto_now=True)
 
-    # def __str__(self):
-    #     return f'id: {self.pk}. {self.costing}'
+    def __str__(self):
+        return f'id: {self.pk}. {self.costing}'
+
+    def as_dict(self):
+        return {
+            'pk': self.pk,
+            'client': self.client,
+            'product': self.product,
+            'costing': self.costing,
+            'date_create': self.date_create,
+        }

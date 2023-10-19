@@ -3160,3 +3160,2543 @@ INFO autoreload Watching for file changes with StatReloader
 INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=zkChMDRkzHfPdQPKbfQz78H746VCLjXW0k1YYvJ6ihprcZ1aC6Tv2cp8oqWbxOCR&pk=8 HTTP/1.1" 200 1350
 INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
 INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 852, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'item.values()'
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 220918
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10558
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'Client' object is not iterable
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 163071
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 852, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'item.items()'
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 220901
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 852, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'item.value()'
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 221121
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 852, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'item.items()'
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 221176
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10558
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10558
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=IDHcAhXiOzjd1YBsAHyuxQt5akUHzYE39D6TM9P4x9tP07NS1yBqsUb6uEVgltjY&pk=7 HTTP/1.1" 200 1353
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=IDHcAhXiOzjd1YBsAHyuxQt5akUHzYE39D6TM9P4x9tP07NS1yBqsUb6uEVgltjY&pk=15 HTTP/1.1" 200 1363
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=IDHcAhXiOzjd1YBsAHyuxQt5akUHzYE39D6TM9P4x9tP07NS1yBqsUb6uEVgltjY&pk=18 HTTP/1.1" 200 1368
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 8385
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'Client' object is not iterable
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 163118
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 852, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '().items()' from 'item.as_dict().items()'
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 221370
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 12737
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 13101
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=brO7TFxCekxc3KGlDD4HsjK5zrYfStUKCrdO5xpoXUHO2TSL4u7Dnns6TLZOEYzF&pk=6 HTTP/1.1" 200 1353
+INFO basehttp "GET /shop/clients/add/ HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10726
+INFO basehttp "GET /shop/clients/edit/?csrfmiddlewaretoken=3guXB0qnjgdaK44cDGJrdrae3GKl2b8zugTENSi92QnMJdgC4xMn8vSfn0LUOGNu&pk=18 HTTP/1.1" 200 1368
+INFO basehttp "GET /shop/clients/add/ HTTP/1.1" 200 1274
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10875
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/clients/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storageapp/items.html
+ERROR basehttp "GET /shop/clients/ HTTP/1.1" 500 79893
+WARNING log Not Found: /favicon.ico
+WARNING basehttp "GET /favicon.ico HTTP/1.1" 404 2435
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9834
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9857
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9857
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9857
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9857
+INFO basehttp "GET /shop/clients/add/?csrfmiddlewaretoken=Nvy7zXarcA8VSV4UnNIxVjiIuPHHWJjVevXOLP2dVaixR4gkOELtQn0JO9IgIeYQ HTTP/1.1" 200 1309
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9870
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9870
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 9879
+INFO basehttp "GET /shop/ HTTP/1.1" 200 397
+INFO basehttp "GET /shop/ HTTP/1.1" 200 397
+INFO basehttp "GET /shop/ HTTP/1.1" 200 397
+INFO basehttp "GET /shop/clients HTTP/1.1" 301 0
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10043
+INFO basehttp "GET /shop/products HTTP/1.1" 301 0
+INFO basehttp "GET /shop/products/ HTTP/1.1" 200 873
+WARNING log Not Found: /shop/orders
+WARNING basehttp "GET /shop/orders HTTP/1.1" 404 3996
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders HTTP/1.1" 301 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 873
+INFO basehttp "GET /shop/products/add/?csrfmiddlewaretoken=MJwpHZRvn0FieFyZJ1WKGY6uKpoG6Wp7dJV6TRJh6APUdOKpaSZGB2Ov4JpfSr42 HTTP/1.1" 200 1497
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/products/ HTTP/1.1" 200 867
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10043
+INFO basehttp "GET /shop/products/ HTTP/1.1" 200 867
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=VoAbn0eipqySjnkNmVfReolTJ1Q8yf5hmoZSzS6480IuiwwdNMiN9s3U3lRHkKKc HTTP/1.1" 200 1503
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Order() got unexpected keyword arguments: 'name', 'email', 'phone', 'adress', 'date_reg'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=VoAbn0eipqySjnkNmVfReolTJ1Q8yf5hmoZSzS6480IuiwwdNMiN9s3U3lRHkKKc HTTP/1.1" 500 89268
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'name', 'email', 'phone', 'adress', 'date_reg'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=VoAbn0eipqySjnkNmVfReolTJ1Q8yf5hmoZSzS6480IuiwwdNMiN9s3U3lRHkKKc HTTP/1.1" 500 89279
+INFO basehttp "GET /shop/clients/ HTTP/1.1" 200 10043
+INFO basehttp "GET /shop/products/ HTTP/1.1" 200 873
+INFO basehttp "GET /shop/products/add/?csrfmiddlewaretoken=lf4V1HL904N18XGCSvJmiAAmVG7vwjcTMftCdzDVJEXD76S2jmMidEinf084iORO HTTP/1.1" 200 1497
+ERROR log Internal Server Error: /shop/products/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'name', 'email', 'phone', 'adress', 'date_reg'
+ERROR basehttp "POST /shop/products/add/?csrfmiddlewaretoken=lf4V1HL904N18XGCSvJmiAAmVG7vwjcTMftCdzDVJEXD76S2jmMidEinf084iORO HTTP/1.1" 500 89305
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/products/add/?csrfmiddlewaretoken=lf4V1HL904N18XGCSvJmiAAmVG7vwjcTMftCdzDVJEXD76S2jmMidEinf084iORO HTTP/1.1" 200 1328
+INFO basehttp "GET /shop/products/add/?csrfmiddlewaretoken=lf4V1HL904N18XGCSvJmiAAmVG7vwjcTMftCdzDVJEXD76S2jmMidEinf084iORO HTTP/1.1" 200 1328
+INFO basehttp "GET /shop/products/ HTTP/1.1" 200 873
+INFO basehttp "GET /shop/products/add/?csrfmiddlewaretoken=Zfip2DTuAnyxeeKKz8cEI0XpGUm3VRBjqfH6evLgjXI9dnWa0ZfAD4Fq0enCHmge HTTP/1.1" 200 1328
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/products/add/?csrfmiddlewaretoken=Zfip2DTuAnyxeeKKz8cEI0XpGUm3VRBjqfH6evLgjXI9dnWa0ZfAD4Fq0enCHmge HTTP/1.1" 200 1338
+INFO basehttp "POST /shop/products/add/?csrfmiddlewaretoken=Zfip2DTuAnyxeeKKz8cEI0XpGUm3VRBjqfH6evLgjXI9dnWa0ZfAD4Fq0enCHmge HTTP/1.1" 302 0
+INFO basehttp "GET /shop/products/ HTTP/1.1" 200 1775
+INFO basehttp "GET /shop/products/add/?csrfmiddlewaretoken=B6OmPEq0Erl2qQ21RkNMfSIw4iBMb44N26d31wiMn1vEpZeribQIaWqxoCClXzJI HTTP/1.1" 200 1338
+INFO basehttp "POST /shop/products/add/?csrfmiddlewaretoken=B6OmPEq0Erl2qQ21RkNMfSIw4iBMb44N26d31wiMn1vEpZeribQIaWqxoCClXzJI HTTP/1.1" 302 0
+INFO basehttp "GET /shop/products/ HTTP/1.1" 200 2682
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 2682
+INFO basehttp "GET /shop/products/ HTTP/1.1" 200 2682
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 2682
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 867
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=sg3aSh6CEYwALKDpLNGrMx6oDMYcBMV0TgsR49YonyGcKTPPcEJnHBOpX6ZLnhAV HTTP/1.1" 200 1338
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\forms.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=sg3aSh6CEYwALKDpLNGrMx6oDMYcBMV0TgsR49YonyGcKTPPcEJnHBOpX6ZLnhAV HTTP/1.1" 200 1338
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 867
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=5IJy57efbXIvHME48F2d1jabiCihkqvDwI8fhZ61UxS7GVQuzw59WnScCWjQ6Vay HTTP/1.1" 200 1338
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 867
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 200 1338
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\urls.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 500 92712
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 500 92618
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 500 92618
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 132, in form_valid
+    logger.info(f"Add new {self.title} {query}")
+                                        ^^^^^
+NameError: name 'query' is not defined
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 500 81570
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 134, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 500 96548
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 134, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 500 96516
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 135, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 75, in form_valid
+    query = self.entity(
+            ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 500 96628
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=gc9E4V8uhw1fecIxByGuHDgo3Bfeiwz9HcylgN0g06bRdlUX2pJqCHYpnVgN41e4 HTTP/1.1" 500 101080
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_del' not found. 'orders_del' is not a valid view function or pattern name.
+ERROR basehttp "GET /shop/orders/ HTTP/1.1" 500 175503
+ERROR log Internal Server Error: /shop/orders/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_del' not found. 'orders_del' is not a valid view function or pattern name.
+ERROR basehttp "GET /shop/orders/ HTTP/1.1" 500 175592
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3590
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=g3diutTNsvmLVxUC5agCY6hwkb3TnF5WH3CZGlLzb5wnUG62w1jyTaZxEv4s9aKR HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=g3diutTNsvmLVxUC5agCY6hwkb3TnF5WH3CZGlLzb5wnUG62w1jyTaZxEv4s9aKR HTTP/1.1" 500 100930
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=g3diutTNsvmLVxUC5agCY6hwkb3TnF5WH3CZGlLzb5wnUG62w1jyTaZxEv4s9aKR HTTP/1.1" 500 100718
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=g3diutTNsvmLVxUC5agCY6hwkb3TnF5WH3CZGlLzb5wnUG62w1jyTaZxEv4s9aKR HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=g3diutTNsvmLVxUC5agCY6hwkb3TnF5WH3CZGlLzb5wnUG62w1jyTaZxEv4s9aKR HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3590
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=ahXsZcHyoeaKiUzWFM29H4T0EWLADtivBhm9b4zk7Okmh3Lm6D55C8B1YgM9pYXq HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=ahXsZcHyoeaKiUzWFM29H4T0EWLADtivBhm9b4zk7Okmh3Lm6D55C8B1YgM9pYXq HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3590
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=nrwTVRPdZwPhp5EIWw0kjOEPYoibEwkxOrVA7JHZI6ZToeQ8nn3geSmQiIjKq1Zs HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=nrwTVRPdZwPhp5EIWw0kjOEPYoibEwkxOrVA7JHZI6ZToeQ8nn3geSmQiIjKq1Zs HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3590
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=wdbZNGFzGgMjfKrrf8PNHhgg8qbKY6nTXdAGZyxlpQWVeTDRGZSJClYhsKcjKB2O HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 132, in form_valid
+    products = Product.object.filter(pk=form.cleaned_data['product'])
+               ^^^^^^^^^^^^^^
+AttributeError: type object 'Product' has no attribute 'object'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=wdbZNGFzGgMjfKrrf8PNHhgg8qbKY6nTXdAGZyxlpQWVeTDRGZSJClYhsKcjKB2O HTTP/1.1" 500 81543
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 132, in form_valid
+    products = Product.objects.filter(pk=form.cleaned_data['product'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\lookups.py", line 337, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=wdbZNGFzGgMjfKrrf8PNHhgg8qbKY6nTXdAGZyxlpQWVeTDRGZSJClYhsKcjKB2O HTTP/1.1" 500 131266
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=wdbZNGFzGgMjfKrrf8PNHhgg8qbKY6nTXdAGZyxlpQWVeTDRGZSJClYhsKcjKB2O HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3590
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=29xZPTNEWRCKloOQ0Gno0x9kKpye1Nuot9WG1LFqFrMmkx0grxqkVBRl4JzNNi9j HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 134, in form_valid
+    products.append(Product.objects.filter(pk=item.pk))
+    ^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'append'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=29xZPTNEWRCKloOQ0Gno0x9kKpye1Nuot9WG1LFqFrMmkx0grxqkVBRl4JzNNi9j HTTP/1.1" 500 81809
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=29xZPTNEWRCKloOQ0Gno0x9kKpye1Nuot9WG1LFqFrMmkx0grxqkVBRl4JzNNi9j HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3590
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 101385
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    form.cleaned_data['products'].set(products)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'products'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 81768
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    form.cleaned_data['product'].set(products)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'set'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 81972
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'QuerySet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 141, in form_valid
+    form.save()
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\models.py", line 543, in save
+    self._save_m2m()
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\models.py", line 524, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related.py", line 1956, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1228, in set
+    else self.target_field.get_prep_value(obj)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related.py", line 1135, in get_prep_value
+    return self.target_field.get_prep_value(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <QuerySet [<Product: id: 1. qedqwd>]>.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 112851
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 134, in form_valid
+    products.append(Product.objects.filter(pk=item.pk).pk)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'pk'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 81905
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 135, in form_valid
+    products.append(product.pk)
+                    ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'pk'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 82039
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'QuerySet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 141, in form_valid
+    form.save()
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\models.py", line 543, in save
+    self._save_m2m()
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\models.py", line 524, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related.py", line 1956, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1228, in set
+    else self.target_field.get_prep_value(obj)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related.py", line 1135, in get_prep_value
+    return self.target_field.get_prep_value(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <QuerySet [<Product: id: 1. qedqwd>]>.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 112851
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order(**form.cleaned_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 92478
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order(**form.cleaned_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 92479
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order(**form.cleaned_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 92383
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order(**form.cleaned_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 92479
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order(**form.cleaned_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 92486
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 131, in form_valid
+    order = Order(**form.cleaned_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 626, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 92393
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 5380
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 5380
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 5380
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 5380
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 6275
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 7170
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 135, in form_valid
+    instance.product.set(*products)
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() takes 2 positional arguments but 3 were given
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 82401
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    instance.product.set(*products)
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() takes 2 positional arguments but 3 were given
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=PoCDznnDyIEEweOtWSBx5CoWGxjPvvgego1kLffphiOgvn0TnJEt0G6X0Rkoh0V9 HTTP/1.1" 500 82514
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 8960
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=iG2x9AEO7YQKq8qbRwxlFZPWTvNKMOVUJGrelswAQy0mphCBinAhA3xXdPOjyjAP HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    instance.product.set(*products)
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1209, in set
+    objs = tuple(objs)
+           ^^^^^^^^^^^
+TypeError: 'Product' object is not iterable
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=iG2x9AEO7YQKq8qbRwxlFZPWTvNKMOVUJGrelswAQy0mphCBinAhA3xXdPOjyjAP HTTP/1.1" 500 86581
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    instance.product.set(*products)
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() takes 2 positional arguments but 3 were given
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=iG2x9AEO7YQKq8qbRwxlFZPWTvNKMOVUJGrelswAQy0mphCBinAhA3xXdPOjyjAP HTTP/1.1" 500 82515
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=iG2x9AEO7YQKq8qbRwxlFZPWTvNKMOVUJGrelswAQy0mphCBinAhA3xXdPOjyjAP HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 143, in form_valid
+    instance.product.set(*products)
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.set() takes 2 positional arguments but 3 were given
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=iG2x9AEO7YQKq8qbRwxlFZPWTvNKMOVUJGrelswAQy0mphCBinAhA3xXdPOjyjAP HTTP/1.1" 500 82782
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=iG2x9AEO7YQKq8qbRwxlFZPWTvNKMOVUJGrelswAQy0mphCBinAhA3xXdPOjyjAP HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 12552
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=rpa6fX9NyEdcahE8tvIRyy2PnrAB5asgSpzNrP1zhenO9qQyUmLNtCKQHLBaRF7b HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=rpa6fX9NyEdcahE8tvIRyy2PnrAB5asgSpzNrP1zhenO9qQyUmLNtCKQHLBaRF7b HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 13450
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=YVedSWQK5gw8s19jg8BkhhuovSvxwyMqpVDU4OIwOQGKralJHZEgclcpPcw6i3rl HTTP/1.1" 200 1733
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=YVedSWQK5gw8s19jg8BkhhuovSvxwyMqpVDU4OIwOQGKralJHZEgclcpPcw6i3rl HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 14348
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=btF1jk3Gfom8uwuaGoG4LUX0dKnL9b8DCt4IvcVsYYwKtFGA7fJ0GYF1x4okVGNy HTTP/1.1" 200 1733
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=btF1jk3Gfom8uwuaGoG4LUX0dKnL9b8DCt4IvcVsYYwKtFGA7fJ0GYF1x4okVGNy HTTP/1.1" 200 1733
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=btF1jk3Gfom8uwuaGoG4LUX0dKnL9b8DCt4IvcVsYYwKtFGA7fJ0GYF1x4okVGNy HTTP/1.1" 200 1733
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=btF1jk3Gfom8uwuaGoG4LUX0dKnL9b8DCt4IvcVsYYwKtFGA7fJ0GYF1x4okVGNy HTTP/1.1" 200 1733
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=btF1jk3Gfom8uwuaGoG4LUX0dKnL9b8DCt4IvcVsYYwKtFGA7fJ0GYF1x4okVGNy HTTP/1.1" 200 1733
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=btF1jk3Gfom8uwuaGoG4LUX0dKnL9b8DCt4IvcVsYYwKtFGA7fJ0GYF1x4okVGNy HTTP/1.1" 200 1733
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=btF1jk3Gfom8uwuaGoG4LUX0dKnL9b8DCt4IvcVsYYwKtFGA7fJ0GYF1x4okVGNy HTTP/1.1" 200 1733
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\models.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=btF1jk3Gfom8uwuaGoG4LUX0dKnL9b8DCt4IvcVsYYwKtFGA7fJ0GYF1x4okVGNy HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 15243
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=nSsrsFgFcr3ctZhJFnH21DjrnahGvAqiOSR8Ex8rV1dOs8t96eKYWH1sHuifh55d HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=nSsrsFgFcr3ctZhJFnH21DjrnahGvAqiOSR8Ex8rV1dOs8t96eKYWH1sHuifh55d HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 16141
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=aVWvQsI6Z931JfKBupEPMdSpm6NPLHZVBVlc2kASIJdDIoW1VgHLHhAqGqOoxcEQ HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    instance.products.set(form.cleaned_data.get('product'))
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'products'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=aVWvQsI6Z931JfKBupEPMdSpm6NPLHZVBVlc2kASIJdDIoW1VgHLHhAqGqOoxcEQ HTTP/1.1" 500 82013
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=aVWvQsI6Z931JfKBupEPMdSpm6NPLHZVBVlc2kASIJdDIoW1VgHLHhAqGqOoxcEQ HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 17939
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 17939
+ERROR log Internal Server Error: /shop/orders/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\utils.py", line 96, in as_div
+    return self.render(self.template_name_div)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\utils.py", line 75, in render
+    return mark_safe(renderer.render(template, context))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+                                  ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\boundfield.py", line 263, in initial
+    return self.form.get_initial_for_field(self.field, self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\forms.py", line 522, in get_initial_for_field
+    value = value()
+            ^^^^^^^
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.__call__() missing 1 required keyword-only argument: 'manager'
+ERROR basehttp "GET /shop/orders/edit/?csrfmiddlewaretoken=JLH7s0Abp97S2q0yIkesnKpmL0DjU1RGaL6OESsX8Jhu1zcY9bhoiO7n5kESGwwB&pk=18 HTTP/1.1" 500 254819
+ERROR log Internal Server Error: /shop/orders/del/19
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in post
+    return redirect(self.redirect_page)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order_page' not found. 'order_page' is not a valid view function or pattern name.
+ERROR basehttp "POST /shop/orders/del/19 HTTP/1.1" 500 94837
+ERROR log Internal Server Error: /shop/orders/del/4
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 51, in post
+    return redirect(self.redirect_page)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order_page' not found. 'order_page' is not a valid view function or pattern name.
+ERROR basehttp "POST /shop/orders/del/4 HTTP/1.1" 500 94820
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+ERROR log Internal Server Error: /shop/orders/del/4
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 48, in post
+    query = self.entity.objects.get(pk=pk)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+storageapp.models.Order.DoesNotExist: Order matching query does not exist.
+ERROR basehttp "POST /shop/orders/del/4 HTTP/1.1" 500 84964
+ERROR log Internal Server Error: /shop/orders/del/19
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 48, in post
+    query = self.entity.objects.get(pk=pk)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+storageapp.models.Order.DoesNotExist: Order matching query does not exist.
+ERROR basehttp "POST /shop/orders/del/19 HTTP/1.1" 500 84983
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 16145
+INFO basehttp "POST /shop/orders/del/18 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 15246
+INFO basehttp "POST /shop/orders/del/17 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 14348
+INFO basehttp "POST /shop/orders/del/16 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 13453
+INFO basehttp "POST /shop/orders/del/15 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 12555
+INFO basehttp "POST /shop/orders/del/14 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 11657
+INFO basehttp "POST /shop/orders/del/13 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 10759
+INFO basehttp "POST /shop/orders/del/12 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 9861
+INFO basehttp "POST /shop/orders/del/11 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 8963
+INFO basehttp "POST /shop/orders/del/10 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 8065
+ERROR log Internal Server Error: /shop/orders/edit/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\utils.py", line 96, in as_div
+    return self.render(self.template_name_div)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\utils.py", line 75, in render
+    return mark_safe(renderer.render(template, context))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+                                  ^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\boundfield.py", line 263, in initial
+    return self.form.get_initial_for_field(self.field, self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\forms\forms.py", line 522, in get_initial_for_field
+    value = value()
+            ^^^^^^^
+TypeError: create_forward_many_to_many_manager.<locals>.ManyRelatedManager.__call__() missing 1 required keyword-only argument: 'manager'
+ERROR basehttp "GET /shop/orders/edit/?csrfmiddlewaretoken=UFweg8RSfTCrjfLlbbADQGEaYjXZ7fQJlFVVs0JEYtM3ioXLC2DzLKmbiDYyTKvE&pk=9 HTTP/1.1" 500 254792
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=UFweg8RSfTCrjfLlbbADQGEaYjXZ7fQJlFVVs0JEYtM3ioXLC2DzLKmbiDYyTKvE HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=UFweg8RSfTCrjfLlbbADQGEaYjXZ7fQJlFVVs0JEYtM3ioXLC2DzLKmbiDYyTKvE HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 8966
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=ALcTL4oXrtnrZfBN0xmMJYeuAwQOQExW1LBAXWgJa3x3YoNdropIE2WvUQRnC9cR HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'QuerySet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    instance.product.add(form.cleaned_data.get('product'))
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1137, in add
+    self._add_items(
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1397, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1331, in _get_target_ids
+    target_ids.add(target_field.get_prep_value(obj))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\related.py", line 1135, in get_prep_value
+    return self.target_field.get_prep_value(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <QuerySet [<Product: id: 1. qedqwd>, <Product: id: 2. 12341>]>.
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=ALcTL4oXrtnrZfBN0xmMJYeuAwQOQExW1LBAXWgJa3x3YoNdropIE2WvUQRnC9cR HTTP/1.1" 500 109572
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=ALcTL4oXrtnrZfBN0xmMJYeuAwQOQExW1LBAXWgJa3x3YoNdropIE2WvUQRnC9cR HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 10762
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=fkAmlFn9fpwh6T6dUnpPVlqhPZvEAnvKGkZ3xxfVYZGT52iDlesLQp8i9jwdmSaF HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 140, in form_valid
+    instance.product.add(*form.cleaned_data.get('product').pk)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'pk'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=fkAmlFn9fpwh6T6dUnpPVlqhPZvEAnvKGkZ3xxfVYZGT52iDlesLQp8i9jwdmSaF HTTP/1.1" 500 82086
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=fkAmlFn9fpwh6T6dUnpPVlqhPZvEAnvKGkZ3xxfVYZGT52iDlesLQp8i9jwdmSaF HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 148, in form_valid
+    print(instance)
+          ^^^^^^^^
+NameError: name 'instance' is not defined
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=fkAmlFn9fpwh6T6dUnpPVlqhPZvEAnvKGkZ3xxfVYZGT52iDlesLQp8i9jwdmSaF HTTP/1.1" 500 81976
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=fkAmlFn9fpwh6T6dUnpPVlqhPZvEAnvKGkZ3xxfVYZGT52iDlesLQp8i9jwdmSaF HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 11660
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=fkAmlFn9fpwh6T6dUnpPVlqhPZvEAnvKGkZ3xxfVYZGT52iDlesLQp8i9jwdmSaF HTTP/1.1" 200 1733
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=fkAmlFn9fpwh6T6dUnpPVlqhPZvEAnvKGkZ3xxfVYZGT52iDlesLQp8i9jwdmSaF HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 11660
+INFO basehttp "POST /shop/orders/del/22 HTTP/1.1" 302 0
+ERROR log Internal Server Error: /shop/orders/del/23
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\backends\base\base.py", line 313, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 50, in post
+    query.delete()
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\base.py", line 1132, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\models\deletion.py", line 459, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\transaction.py", line 263, in __exit__
+    connection.commit()
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\backends\base\base.py", line 337, in commit
+    self._commit()
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\backends\base\base.py", line 312, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\db\backends\base\base.py", line 313, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR basehttp "POST /shop/orders/del/23 HTTP/1.1" 500 115093
+INFO basehttp "POST /shop/orders/del/21 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 10762
+INFO basehttp "POST /shop/orders/del/3 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 8969
+INFO basehttp "POST /shop/orders/del/2 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 8055
+INFO basehttp "POST /shop/orders/del/5 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 7160
+INFO basehttp "POST /shop/orders/del/6 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 6265
+INFO basehttp "POST /shop/orders/del/7 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 5370
+INFO basehttp "POST /shop/orders/del/8 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 4475
+INFO basehttp "POST /shop/orders/del/9 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3580
+INFO basehttp "POST /shop/orders/del/23 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 2682
+INFO basehttp "POST /shop/orders/del/20 HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 1781
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/add/?csrfmiddlewaretoken=ImUpkpYocV4dcIuhX8w9MNeImibcW9q39mj6whQaVvePbRGHoZz5HRWJGCcLIE5Y HTTP/1.1" 200 1733
+ERROR log Internal Server Error: /shop/orders/add/
+Traceback (most recent call last):
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\venv\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py", line 142, in form_valid
+    instance.product.add(*form.cleaned_data.get('product').pk)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'pk'
+ERROR basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=ImUpkpYocV4dcIuhX8w9MNeImibcW9q39mj6whQaVvePbRGHoZz5HRWJGCcLIE5Y HTTP/1.1" 500 82269
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "POST /shop/orders/add/?csrfmiddlewaretoken=ImUpkpYocV4dcIuhX8w9MNeImibcW9q39mj6whQaVvePbRGHoZz5HRWJGCcLIE5Y HTTP/1.1" 302 0
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3577
+INFO autoreload D:\Python\pythonProject\djangoGB\djangoproject\storageapp\views.py changed, reloading.
+INFO autoreload Watching for file changes with StatReloader
+INFO basehttp "GET /shop/orders/ HTTP/1.1" 200 3137

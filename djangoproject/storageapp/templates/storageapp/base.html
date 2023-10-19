@@ -5,8 +5,18 @@
     <title>{% block title %}Главная страница магазина{% endblock %}</title>
 </head>
 <body>
+
+    {% block header %}
+        <div><a href="/shop/clients">Клиенты</a></div>
+        <div><a href="/shop/products">Продукты</a></div>
+        <div><a href="/shop/orders">Заказы</a></div>
+    {% endblock %}
+
     {% block content %}
     <h1>Блок контента</h1>
+    {% endblock %}
+
+    {% block footer %}
     {% endblock %}
 </body>
 </html>
